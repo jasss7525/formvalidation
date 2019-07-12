@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 
-export default class FormValidation extends React.Component {
+export default class FormValidationWithoutSubmit extends React.Component {
 constructor(props){
     super(props);
     this.state={
@@ -58,15 +58,16 @@ handlePhone =(event)=> {
         return (
             <div class="container">
             <form>
+                <div Style='color:black;font-size:22px;text-align:center;'>SignUp</div>
                 
-                Name:<input type="text" onChange={this.handleName} name="UserName"/><strong class="error">{this.state.UserNameerrormsg}</strong><br/><br/>
+                UserName:<input type="text" onChange={this.handleName} name="UserName"/><strong class="error">{this.state.UserNameerrormsg}</strong><br/><br/>
                 
-                Email:<input type="text" name="Email"  onChange={this.handleEmail}/><strong class="error">{this.state.Emailerrormsg}</strong ><br/><br/>
+                Email-Id:<input type="text" name="Email"  onChange={this.handleEmail}/><strong class="error">{this.state.Emailerrormsg}</strong ><br/><br/>
                 
-                Phone:<input type="text" name="phone" onChange={this.handlePhone}/><strong class="error">{this.state.Phoneerrormsg}</strong><br/><br/>
+                Phone-Num:<input type="text" name="phone" onChange={this.handlePhone}/><strong class="error">{this.state.Phoneerrormsg}</strong><br/><br/>
                 
-                password:<input type="password" name="password"/><br/><br/>
-                
+                password :<input type="password" name="password"/><br/><br/>
+        
                 
             </form>
             </div>

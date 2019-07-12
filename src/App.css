@@ -17,7 +17,6 @@
   padding:9px;
   margin:10px;
 }
-.error strong{
+.error {
   color:black;
-  transition:1s;
 }
